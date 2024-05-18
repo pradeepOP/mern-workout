@@ -15,6 +15,7 @@ app.use((req, res, next) => {
 });
 //routes
 app.use("/api/workouts", require("./routes/workouts"));
+app.use("/api/user", require("./routes/user"));
 
 mongoose
   .connect(process.env.DATABASE_URI)
